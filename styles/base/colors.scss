@@ -9,11 +9,19 @@ body{
         }
     }
     section{
-        section{
+        section.form-container{
+            background-color: white;
+            opacity: 80%;
             h2, p{
-                color: white;
+                color: black;
             }
 
         }
     }
+}
+
+
+input[type="submit"]{
+    color: white;
+    background-color: #48C5CE;   
 }

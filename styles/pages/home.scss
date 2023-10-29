@@ -1,11 +1,28 @@
 main.container{
     margin: 0 auto;
     max-width: 1000px;
-    section{
-        section{
-            h2{
-                
+    section.master{
+        padding: 1.2rem;
+        background-image: url(../img/people.jpg);
+        background-size: cover;
+        overflow: hidden;
+        section.form-container{
+            padding: 2em;
+            float: right;
+            max-width: 230px;
+            h2,p{
+                margin-bottom: 1rem;
+            }
+        }
+        form{
+            input, select{
+                width: 100%;
+                box-sizing: border-box;
+                padding: 1rem;
+                border: none;
+                margin-bottom: 1rem;
             }
         }
     }
 }
+

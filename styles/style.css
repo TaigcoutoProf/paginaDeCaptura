@@ -12,13 +12,26 @@ body header {
 body header h1 {
   color: white;
 }
-body section section h2, body section section p {
+body section section.form-container {
+  background-color: white;
+  opacity: 80%;
+}
+body section section.form-container h2, body section section.form-container p {
+  color: black;
+}
+
+input[type=submit] {
   color: white;
+  background-color: #48C5CE;
 }
 
 header h1 {
   text-align: center;
   font-size: 1.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section section h2, section section p {
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -29,6 +42,27 @@ header {
 main.container {
   margin: 0 auto;
   max-width: 1000px;
+}
+main.container section.master {
+  padding: 1.2rem;
+  background-image: url(../img/people.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+main.container section.master section.form-container {
+  padding: 2em;
+  float: right;
+  max-width: 230px;
+}
+main.container section.master section.form-container h2, main.container section.master section.form-container p {
+  margin-bottom: 1rem;
+}
+main.container section.master form input, main.container section.master form select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+  border: none;
+  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
