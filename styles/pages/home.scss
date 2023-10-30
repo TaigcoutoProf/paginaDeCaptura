@@ -7,8 +7,8 @@ main.container{
         background-size: cover;
         overflow: hidden;
         section.form-container{
+            margin: 0 auto;
             padding: 2em;
-            float: right;
             max-width: 230px;
             h2,p{
                 margin-bottom: 1rem;
@@ -27,17 +27,36 @@ main.container{
 }
 
 footer{
-    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem;
     text-align: center;
     img{
-        width: 10rem;
+        width: 12rem;
+        margin-right: 1rem;
     }
     section.description{
-        display:inline-block;
         max-width: 40%;
         text-align: left;
         h2,p{
             margin-bottom: 2rem;
         }
+    }
+}
+
+@media (min-width: 670px) {
+    footer{
+        flex-direction: row;
+        align-items: flex-start;
+        img{
+            width: 12rem;
+        }
+    }
+
+    section.form-container{
+        float: right;
+        max-width: 80%;
     }
 }
