@@ -2,21 +2,25 @@
 
 body{
     background-color: black;
-    header{
-        background-color: #48C5CE;
-        h1{
-            color: white;
+}
+header{
+    background-color: #48C5CE;
+    h1{
+        color: white;
+    }
+}
+section.master{
+    section.form-container{
+        background-color: rgb(175, 175, 175);
+        opacity: 90%;
+        h2, p{
+            color: black;
         }
     }
-    section{
-        section.form-container{
-            background-color: white;
-            opacity: 80%;
-            h2, p{
-                color: black;
-            }
-
-        }
+}
+form{
+    input{
+        background-color: white;
     }
 }
 
@@ -24,4 +28,10 @@ body{
 input[type="submit"]{
     color: white;
     background-color: #48C5CE;   
+}
+footer{
+    background-color: #202121;
+    section{
+        color: white;
+    }
 }

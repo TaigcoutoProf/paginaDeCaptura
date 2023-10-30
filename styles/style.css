@@ -6,23 +6,36 @@ body, h1 {
 body {
   background-color: black;
 }
-body header {
+
+header {
   background-color: #48C5CE;
 }
-body header h1 {
+header h1 {
   color: white;
 }
-body section section.form-container {
-  background-color: white;
-  opacity: 80%;
+
+section.master section.form-container {
+  background-color: rgb(175, 175, 175);
+  opacity: 90%;
 }
-body section section.form-container h2, body section section.form-container p {
+section.master section.form-container h2, section.master section.form-container p {
   color: black;
+}
+
+form input {
+  background-color: white;
 }
 
 input[type=submit] {
   color: white;
   background-color: #48C5CE;
+}
+
+footer {
+  background-color: #202121;
+}
+footer section {
+  color: white;
 }
 
 header h1 {
@@ -63,6 +76,22 @@ main.container section.master form input, main.container section.master form sel
   padding: 1rem;
   border: none;
   margin-bottom: 1rem;
+}
+
+footer {
+  padding: 3rem;
+  text-align: center;
+}
+footer img {
+  width: 10rem;
+}
+footer section.description {
+  display: inline-block;
+  max-width: 40%;
+  text-align: left;
+}
+footer section.description h2, footer section.description p {
+  margin-bottom: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
